@@ -1,0 +1,20 @@
+<div class="text-center">
+<h1>Les recettes</h1>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <% @articles.each do |article| %>
+      <div class="col-12">
+        <div class="shadow bg-white rounded p-4 d-flex justify-content-between">
+          <h2><%=link_to article.title, article_path(article.id) %></h2>
+  <h2><%= article.title %> - <%= "😍" * article.stars %></h2>
+  <p><b><%= article.created_at.strftime("%D") %></b></p>
+  <%= link_to "New article", new_article_path, class: "btn btn-primary" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+

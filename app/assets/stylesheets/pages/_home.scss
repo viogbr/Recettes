@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+
+body {
+background-image: asset-data-url("livre1.jpg");
+background-size: cover;
+}
+
+h1 {
+  color:white;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  font-size:60px;
+  position:absolute;
+  top:350px;
+  left:100px;
+}

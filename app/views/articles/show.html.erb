@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <div class="shadow p-3 mb-5 bg-white rounded text-center">
+    <h1><%= @article.title %></h1>
+    <p><%= "😍" * @article.stars %></p>
+    <p><%= @article.created_at.strftime("%d %b %Y") %></p>
+    <p><%= @article.content %></p>
+    <%= link_to "Edit", edit_article_path, class: "btn btn-primary" %>
+    <%= link_to "Kill", article_path(@article.id), method: :delete, class: "btn btn-danger" %>
+  </div>
+</div>
