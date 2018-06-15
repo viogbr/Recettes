@@ -3,3 +3,11 @@
 
 <h1>Mon livre de recettes <br>étudiantes</h1>
 
+<div class="log">
+  <% if user_signed_in? %>
+    <%= link_to t(".sign_out", default: "Log out"), destroy_user_session_path, method: :delete %>
+  <% else %>
+    <%= link_to t(".sign_in", default: "Login"), new_user_session_path %>
+  <% end %>
+</div>
+

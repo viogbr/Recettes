@@ -1,16 +1,24 @@
 // Specific CSS for your home-page
 
 body {
-background-image: asset-data-url("livre1.jpg");
-background-size: cover;
+  background-image: asset-data-url("livre1.jpg");
+  background-size: cover;
+  background-repeat:no-repeat; 
+  height: 100vh;
 }
 
 h1 {
-  color:white;
+  color:#F4EFDF;
   text-align: center;
   font-family: 'Kalam', cursive;
   font-size:60px;
   position:absolute;
-  top:350px;
+  top:340px;
   left:100px;
 }
+
+.d-flex {
+  background-color: white;
+  opacity: 0.8;
+} 
+
